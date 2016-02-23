@@ -35,6 +35,9 @@ Gems:
 Devise, Carousel, Paperclip, ImageMagickBootstrap-Form
 
 URL: https://rod-client.firebaseapp.com
+
 User stories: https://trello.com/b/F5ao0qaT/rod-broker
+
 Repository: https://github.com/erikapallasmoore/Project4
+
 Wire frames: in this folder
