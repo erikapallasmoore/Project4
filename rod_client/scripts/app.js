@@ -37,14 +37,9 @@ app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpPr
       templateUrl: 'views/about.html',
       controller: 'AboutCtrl'
     })
-
     .when('/results', {
       templateUrl: 'views/results.html',
       controller: 'ResultsCtrl'
-    })
-    .when('/groups', {
-      templateUrl: 'views/groups.html',
-      controller: 'GroupsCtrl'
     })
     .when('/signup', {
       templateUrl: 'views/signup.html',
@@ -79,19 +74,9 @@ app.config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpPr
     });
 }]);
 
-app.factory('Group', ['$resource', function($resource) {
-  return $resource(apiEndpoint + '/groups/:id.json', null, {
-    // 'update': { method:'PUT' }
-  })
-}]);
 app.factory('Builder', ['$resource', function($resource) {
   return $resource(apiEndpoint + '/builders/:id.json', null, {
     'update': { method:'PUT' }
-  })
-}]);
-app.factory('Pole', ['$resource', function($resource) {
-  return $resource(apiEndpoint + '/poles/:id.json', null, {
-    // 'update': { method:'PUT' }
   })
 }]);
 
